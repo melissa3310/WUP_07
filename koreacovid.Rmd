@@ -54,9 +54,12 @@ basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=sex))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ````
   
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+```  
 
-
-
+The barchart shows that the male deaths related to covid make up to 60% of the total death and females make up the other 40% of death.
 
 
   
