@@ -65,6 +65,14 @@ The barchart shows that the male deaths related to covid make up to 60% of the t
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Our numerical results shows us that out of 100, males make up 64% of covid related death compared to females at 36%. This also shows us that males are twice as likely to die from covid compared to females.
+
 
 ## Inferential results 
 
